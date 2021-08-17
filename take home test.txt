@@ -1,0 +1,30 @@
+case: 
+-Finding a student name (Oliver Johanson) on a collage absent list
+> First approach : seeing the names one by one = o(n)
+> Second approach : See at the middle row of the list and see if "Oliver Johanson" is on the top of the row or the bottom = o(log n)
+
+First approach:
+1. Pick up the collage student absent list
+2. Look at the first row
+3. read at the row
+4. If "Oliver Johanson" is on the row
+5.       Mark his attendence
+6. Else if "Oliver Johanson" is not on the row (1)
+7.       Go to the next row (2)
+8. Else
+9.       Quit
+
+Second approach:
+1. Pick up the collage student absent list
+2. Look at the middle of the row
+3. Read the row
+4. If "Oliver Johanson" is on the row
+5.       Mark his attendence
+6. Else if "Oliver Johanson" is later on the list (50)
+7.      Look at the middle right half of the list (75)
+8.      Go back to line 3
+9. Else if "Oliver Johanson" is earlier in the list
+10.     Look at the middle left half of the list
+11.     Go back to line 3
+12.Else
+13.     Quit
